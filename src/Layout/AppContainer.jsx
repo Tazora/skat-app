@@ -22,9 +22,10 @@ const styles = theme => ({
 
 function Index(props) {
   const { classes } = props;
+  console.log(props.props);
     return (
       <div className={classes.root}>
-        <AppBar props={props.gameName} />
+        <AppBar title={props.props.gameName} />
         <TestExpansion />
       </div>
     );
